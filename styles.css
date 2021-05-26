@@ -1,0 +1,98 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+/* variables css */
+:root {
+    --title: #f8c27a;
+    --textShadow: 0 2px 2px rgba(0,0,0,.7);
+    --boxShadow: 0 0px 10px rgba(0,0,0,.2);
+}
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    width: 100vw;
+    height: 100vh;
+    /* permet d'éviter de scroller (force la page à faire 100vwx100vh */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: var(--boxShadow);
+}
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: var(--title);
+    text-shadow: var(--textShadow);
+    display: inline-block;
+}
+p#description{
+    margin: 10px auto;
+}
+/* heart icons */
+.vies{
+    margin: 10px;
+}
+#heart-outline, #heart{
+    width: 50px;
+    height: 50px;
+    fill: rgba(255, 0, 0, 0.795);
+    margin: auto 5px;
+}
+/* formulaire */
+#inputBox{
+    background-color: #96e6a1;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: var(--boxShadow);
+}
+#inputBox > label {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+input, button{
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 120px;
+}
+button{
+    background-color: teal;
+    color: #F8C27A;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+    text-shadow: var(--textShadow);
+    font-weight: bold;
+}
+button:hover{
+    transform: translateY(-2px);
+    background-color: rgb(1, 173, 173);
+}
+p#message{
+    margin: 20px auto 10px auto;
+}
+#rejouer{
+    display: none;
+    margin: 5px auto 0 auto;
+}
+#details{
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 10px;
+}
